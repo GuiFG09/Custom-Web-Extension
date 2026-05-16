@@ -1,0 +1,64 @@
+.themeRect {
+  width: 100%;
+  height: 70px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.themeRect:hover {
+  transform: scale(1.02);
+}
+
+.activeCard {
+  background-color: var(--theme-primary) !important;
+}
+
+.miniRect {
+  width: 80px;
+  height: 50px;
+  background-color: #1A181C; 
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pillContainer {
+  display: flex;
+  width: 54px;  
+  height: 14px; 
+  overflow: hidden; 
+}
+
+.primaryColorBlock {
+  flex: 1;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.secondaryColorBlock {
+  flex: 1;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.cardText {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--theme-primary);
+  transition: color 0.2s ease;
+}
+
+.activeCard .cardText {
+  color: var(--theme-bg) !important;
+}
