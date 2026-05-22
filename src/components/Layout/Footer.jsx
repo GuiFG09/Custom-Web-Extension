@@ -8,9 +8,13 @@ export function Footer() {
       <div className={styles.divider} />
       
       <div className={styles.buttonContainer}>
+        <button className={styles.defaultButton}>
+          Padrão
+        </button>
         <button className={styles.saveButton}>
           Salvar
         </button>
+
       </div>
     </footer>
   );

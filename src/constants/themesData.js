@@ -17,14 +17,14 @@ export const THEMES_OPTIONS = [
     id: 3, 
     name: 'Tema Claro', 
     bg: '#F8FAF6',        
-    primary: '#6750A4',   
-    secondary: '#6b686a' 
+    primary: '#000000',   
+    secondary: '#adadad' 
   },
   { 
     id: 4, 
     name: 'Tema Personalizado', 
     bg: '#000000', 
-    primary: '#11A2B5', 
+    primary: '#b51171', 
     secondary: '#f8f8f8' 
   },
 ];
