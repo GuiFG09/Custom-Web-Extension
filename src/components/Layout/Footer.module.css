@@ -19,9 +19,33 @@
 .buttonContainer {
   width: 100%;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: space-between; 
   padding-right: 0;
   box-sizing: border-box;
+  gap: 5px;
+}
+
+.defaultButton {
+  width: 20%; 
+  height: 30px;
+  background-color: var(--theme-primary);
+  color: var(--theme-secondary); 
+  border: none;
+  border-radius: 100px; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.defaultButton:hover {
+  background-color: #DFD3F3; 
+  transform: scale(1.01);
+}
+
+.defaultButton:active {
+  transform: scale(0.99); 
 }
 
 

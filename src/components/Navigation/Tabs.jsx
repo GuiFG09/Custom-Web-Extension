@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { CardItem } from '../ui/CardItem';
 import { THEMES_OPTIONS } from '../../constants/themesData'; 
 import styles from './Tabs.module.css';

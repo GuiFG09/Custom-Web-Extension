@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './Header.module.css';
 
 const icons = import.meta.glob('../../assets/icons/*.svg', { eager: true });
@@ -8,9 +7,7 @@ const getIconUrl = (filename) => {
   return icons[path]?.default || '';
 };
 
-export function Header() {
-  const [activeTab, setActiveTab] = useState('temas');
-
+export function Header({ activeMenu, setOnMenuChange }) {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.divider} />
@@ -18,8 +15,8 @@ export function Header() {
 
       <nav className={styles.tabsContainer}>
         <button 
-          className={`${styles.tabButton} ${activeTab === 'temas' ? styles.active : ''}`}
-          onClick={() => setActiveTab('temas')}
+          className={`${styles.tabButton} ${activeMenu === 'temas' ? styles.active : ''}`}
+          onClick={() => setOnMenuChange('temas')}
         >
           <span 
             className={styles.iconStyle} 
@@ -29,8 +26,8 @@ export function Header() {
         </button>
 
         <button 
-          className={`${styles.tabButton} ${activeTab === 'fontes' ? styles.active : ''}`}
-          onClick={() => setActiveTab('fontes')}
+          className={`${styles.tabButton} ${activeMenu === 'fontes' ? styles.active : ''}`}
+          onClick={() => setOnMenuChange('fontes')}
         >
           <span 
             className={styles.iconStyle} 
@@ -40,8 +37,8 @@ export function Header() {
         </button>
 
         <button 
-          className={`${styles.tabButton} ${activeTab === 'estilos' ? styles.active : ''}`}
-          onClick={() => setActiveTab('estilos')}
+          className={`${styles.tabButton} ${activeMenu === 'estilos' ? styles.active : ''}`}
+          onClick={() => setOnMenuChange('estilos')}
         >
           <span 
             className={styles.iconStyle} 
