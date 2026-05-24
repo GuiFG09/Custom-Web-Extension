@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "CustomWeb Extension",
+  "version": "0.1.0",
+  "description": "Extensão para personalização de estilos para páginas web.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "dist/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
